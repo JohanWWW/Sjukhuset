@@ -37,7 +37,7 @@ public class Hospital {
     }
 
     private void treatPatients() {
-        testAllPatients(doctors[0]);
+        testAllPatients(doctors[0]); // Dr. Anna
         doctors[1].treatPatient(patients[0], doctors[0].fetchCorrectMedication("Atopiska vinterfötter"));
         doctors[0].treatPatient(patients[1], doctors[1].fetchCorrectMedication("Atopiska vinterfötter"));
         doctors[1].treatPatient(patients[4], doctors[0].fetchCorrectMedication("Epikondylit"));
@@ -45,7 +45,7 @@ public class Hospital {
         doctors[1].treatPatient(patients[7], doctors[0].fetchCorrectMedication("Gallsten"));
         doctors[0].treatPatient(patients[7], doctors[1].fetchCorrectMedication("Halsfluss"));
         doctors[1].treatPatient(patients[9], doctors[0].fetchCorrectMedication("Järnbrist"));
-        testAllPatients(doctors[1]);
+        testAllPatients(doctors[1]); // Dr. Bertil
         doctors[1].treatPatient(patients[1], doctors[0].fetchCorrectMedication("Blodförgiftning"));
         doctors[0].treatPatient(patients[3], doctors[1].fetchCorrectMedication("Diskbråck"));
         doctors[1].treatPatient(patients[6], doctors[0].fetchCorrectMedication("Gallsten"));
