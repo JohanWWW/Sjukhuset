@@ -20,6 +20,8 @@ public class Patient {
     public Patient(String name) {
         this.name = name;
         this.diagnosis = null;
+
+        isSick = false;
     }
 
     public boolean isSick() {
@@ -27,6 +29,7 @@ public class Patient {
     }
 
     public String getSickness() {
+
         return diagnosis;
     }
 
@@ -35,6 +38,11 @@ public class Patient {
     }
 
     public void takeMedication(Medicine medicine) {
+
+        if (medicine.getTreatmentName() == getSickness()) {
+            isSick = false;
+            diagnosis = null;
+        }
 
     }
 }
