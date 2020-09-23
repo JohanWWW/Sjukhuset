@@ -2,7 +2,7 @@ package com.company;
 
 public class Patient {
     private String name;
-    private String diagnosis; // Null means sick
+    private String diagnosis; // Null means the patient is healthy
 
     public Patient(String name, String diagnosis) {
         this.name = name;
