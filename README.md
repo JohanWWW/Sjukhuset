@@ -1,2 +1,5 @@
 # Sjukhuset
-Labb 3: School project
+
+**Made by**
+
+Johan & Hamid
