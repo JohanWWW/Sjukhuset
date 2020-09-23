@@ -2,34 +2,23 @@ package com.company;
 
 public class Patient {
     private String name;
-    private String diagnosis;
-    private boolean isSick;
+    private String diagnosis; // Null means sick
 
     public Patient(String name, String diagnosis) {
         this.name = name;
         this.diagnosis = diagnosis;
-
-        // null means healthy
-        if (diagnosis == null) {
-            isSick = false;
-        } else {
-            isSick = true;
-        }
     }
 
     public Patient(String name) {
         this.name = name;
         this.diagnosis = null;
-
-        isSick = false;
     }
 
     public boolean isSick() {
-        return isSick;
+        return (diagnosis != null);
     }
 
     public String getSickness() {
-
         return diagnosis;
     }
 
@@ -38,12 +27,9 @@ public class Patient {
     }
 
     public void takeMedication(Medicine medicine) {
-
         if (medicine.getTreatmentName() == getSickness()) {
-            isSick = false;
             diagnosis = null;
         }
-
     }
 }
 
