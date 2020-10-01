@@ -27,7 +27,7 @@ public class Patient {
     }
 
     public void takeMedication(Medicine medicine) {
-        if (medicine.getTreatmentName() == getSickness()) {
+        if (medicine.getTreatmentName().equals(getSickness())) {
             diagnosis = null;
         }
     }
